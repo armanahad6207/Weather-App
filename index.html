@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather of your Location</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"
+      integrity="sha512-Mo79lrQ4UecW8OCcRUZzf0ntfMNgpOFR46Acj2ZtWO8vKhBvD79VCp3VOKSzk6TovLg5evL3Xi3u475Q/jMu4g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- search location box -->
+      <div class="header">
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="enter your location"
+            class="enter-location"
+          />
+          <input type="submit" value="search" class="search" />
+        </div>
+      </div>
+      <div class="weather-body">
+        <div class="weather-result">
+          <img src="./assets/cloud.png" alt="" width="200px" class="weather-img" />
+          <div>
+            <div class="temperature">0 <sup>°C</sup></div>
+            <div class="cloud">Light Rain</div>
+          </div>
+        </div>
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="ri-water-percent-fill"></i>
+            <div class="humidity-check">
+              <p id="humidity-value">45%</p>
+              <p id="humidity-text">humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <i class="ri-windy-line"></i>
+            <div class="wind-check">
+              <p id="wind-value">12km/h</p>
+              <p id="wind-text">wind-speed</p>
+          </div>
+        </div>
+      </div>
+      <!-- end search location box -->
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>

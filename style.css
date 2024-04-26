@@ -45,7 +45,9 @@ body {
 .location:focus {
   background-color: rgb(179, 243, 245);
 }
-
+.weather-body {
+  display: none;
+}
 .weather-result {
   display: flex;
   align-items: center;
@@ -99,4 +101,18 @@ body {
 .wind #wind-text {
   font-size: 12px;
   color: #22383b;
+}
+.location-not-found {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.location-not-found h1 {
+  line-height: 80px;
+  color: #658ec2;
+}
+
+.location-not-found .error404 {
+  width: 300px;
 }
